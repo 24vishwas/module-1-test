@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <section class="score-card">
+            <div class="headings">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="board-wrapper">
+                <div class="score-board">
+                <p>COMPUTER SCORE</p>
+                <h1 id="pc_score">0</h1>
+            </div>
+            <div class="score-board">
+                <p>YOUR SCORE</p>
+                <h1 id="p_score">0</h1>
+            </div>
+        </div>
+
+        </section>  
+
+        <section class="img-section">
+            <div class="img-wrapper">
+            <div class="stone" >
+                <img src="./stone.png" id="stone" alt="">
+            </div>
+            <img class="line3" src="./Line3.png" alt="">
+            <div class="paper">
+                <img src="./paper.png"  id="paper" alt="">
+            </div>
+            <img class="line1"  src="./line-1.png" alt="">
+            <div class="scissor" >
+                <img src="./scissor.png" id="scissor" alt="">
+            </div>
+            <img class="line2" src="./Line2.png" alt="">
+        </div>
+        </section>
+        <section class="rules-section">
+            
+            <div class="rules-card" id="rules-card">
+                <div class="close" id="close">
+                    <img src="./close.png" alt="">
+                </div>
+                <h1>Game Rules</h1>
+                <li><span></span><p> Rock beats scissors, scissors beat paper, and paper beats rock.</p></li>
+                <li><span></span><p> Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p></li>
+                <li><span></span><p> Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p></li>
+                <li> <span></span><p> If both players lay down the same hand, each player lays down another hand</p></li>
+            </div>
+            <div class="btn-container">
+            <p id="open-rules">
+                RULES
+            </p>
+            <p id="next-btn">
+               <a href="./win.html">NEXT</a>
+            </p>
+        </div>
+        </section>
+        <section class="result-section">
+            <div>
+                <h1>your picked</h1>
+            <div class="stone-1 selection">
+                <img src="./stone.png" alt="">
+            </div>
+            <div class="paper-1 selection">
+                <img src="./paper.png" alt="">
+            </div>
+            <div class="scissor-1 selection">
+                <img src="./scissor.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>pc picked</h1>
+            <div class="stone-2 selection1">
+                <img src="./stone.png" alt="">
+            </div>
+            <div class="paper-2 selection1">
+                <img src="./paper.png" alt="">
+            </div>
+            <div class="scissor-2 selection1">
+                <img src="./scissor.png" alt="">
+            </div>
+        </div>
+        <div class="result-banner">
+            <div id="u-win">
+                <h1>YOU WIN </h1>
+            <h4>AGAINST PC</h4>
+            </div>
+            <div id="u-lost">
+                <h1>YOU LOST</h1>
+                <h4>AGAINST PC</h4>
+            </div>
+            <div id="u-tie">
+                <h1>TIE UP</h1>
+            </div>
+            <a href="./index.html"><button>PLAY AGAIN</button></a>
+        </div>
+        </section>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
